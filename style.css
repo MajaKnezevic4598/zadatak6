@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+:root{
+    --main-bg-color:#FAFAFA;
+}
+
+body{
+    width:100vw;
+    height:100vh ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+}
+.main {
+    background-color:var(--main-bg-color);
+    border: 1px solid black;
+    height: auto;
+    position: relative;
+    z-index: 10;
+ 
+   
+}
+
+ p {
+    color: #7A7A7A;
+    font-size: 1.2vw;
+    margin: 0;
+    line-height: 2.1vw;
+    text-align: justify;
+}
+h1,h2,h3,h4{
+    margin: 0;
+}
+h1{
+    font-size: 2.6vw;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.9vw;
+    font-weight: 700;
+}
+h3{
+    font-size: 1.4vw;
+    font-weight: 700;
+}
+h4{
+    font-size:1.2vw;
+    font-weight: 700;
+}
+.header-picture{
+width: 100%;
+height: auto;
+border: 1px solid black;
+position: relative;
+
+}
+.header-picture img {
+  max-width: 100%;
+   object-fit: cover;
+}
+.header-picture-layer{
+   
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,30%);
+    display:flex;
+    justify-content: center;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.navbar-conteiner{
+    width: 77%;
+    height: 6vh;
+    border: 1px solid white;
+    margin-top:4vw;
+    color:#FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.crowdfound {
+    font-size:2vw;
+    font-weight: 700;
+}
+
+.navbar>a{
+    color:white;
+    text-decoration: none;
+    font-size:1.2vw;
+    margin-left:2vw;
+}
+
+.bamboo-conteiner{
+    width: 55%;
+    height: auto;
+    margin:0 auto;
+    border: 1px solid blue;
+    margin-top:-7vw;
+    /* background-color:var(--main-bg-color); */
+    background-color: lightgrey;
+    position: relative;
+    z-index:20;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+}
+
+.title-section {
+  
+   margin-bottom: 4vh;
+   border: 1px solid rgba(122,122,122,0.5);
+   background-color: #FFF;
+   border-radius: 6px;
+   position: relative;
+   
+}
+.title-section-logo{
+    position: absolute;
+    left:50%;
+    top:-28px;
+    transform:translateX(-50%);
+
+    
+}
+
+.title-section h2{
+    margin-bottom:1.5vh;
+    margin-top:10vh;
+    text-align: center;
+  
+}
+.title-section p{
+    margin: 0;
+    margin-bottom: 5vh;
+    text-align: center;
+    
+}
+
+.bookmark-conteiner{
+    width: 85%;
+    height: 8vh;
+    margin:0 auto;
+   margin-bottom: 4vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+  
+
+}
+.back-btn{
+    width: 15vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4vw;
+    font-size: 1.2vw;
+    background-color: #3CB3AB;
+    color: #FFF;
+    font-weight: 500;
+    /* background-color: #147A73; */
+    cursor: pointer;
+}
+.back-btn:hover{
+    background-color:#147A73; ;
+}
+
+.bookmark-btn{
+    height: 8vh;
+    width: 15vw;
+    border: 1px solid black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vw;
+    cursor: pointer;
+
+}
+
+.bookmark-img{
+    height: 100%;
+    width: auto;
+    position: relative;
+    z-index:2
+}
+.bookmark-text{
+    height: 8vh;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4f4f4;
+    color: #7A7A7A;
+    font-weight: 500;
+    margin-left:-3vw;
+    border-radius: 4vw;
+    position: relative;
+    
+}
+.backers-conteiner{
+    margin-bottom:4vh;
+    background-color: #FFF;
+    border-radius: 6px;
+      border: 1px solid rgba(122,122,122,0.5);
+   
+    
+}
+.backers-conteiner p{
+    margin: 0;
+   
+}
+
+
+.backers-statistics{
+    width: 85%;
+    height: 12vh;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top:4.5vh;
+   
+   
+}
+
+.backed{
+    margin-right: 3vw;
+}
+.total-backers{
+    padding-left:4vw;
+    border-left: 1px solid rgba(122, 122, 122,0.2);
+    padding-right: 5vw;
+    border-right: 1px solid rgba(122,122,122,0.2);
+}
+.days-left{
+    padding-left:3.5vw;
+}
+
+.slider{
+    width: 85%;
+    height: 8px;
+   
+    margin: 0 auto;
+    margin-top: 2vh;
+    margin-bottom: 3.5vh;
+    position: relative;
+    border-radius: 9px;
+    background-color: rgba(122,122,122,0.1);
+   
+}
+.inner-slider{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #3CB3AB;
+    width: 78%;
+    border-radius: 9px;
+}
+
+
+
+.about-project{
+    width: 100%;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 6px;
+    border: 1px solid rgba(122,122,122,0.5);
+  
+}
+
+             
+.about-conteiner{
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid orange;
+    margin-bottom: 8vh;
+}
+.about-conteiner>p:first-of-type{
+    margin-bottom:2.3vh;
+}
+.about-conteiner h3{
+   margin-top:5.5vh;
+   margin-bottom: 3vh;
+}
+
+.stand{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(122,122,122,0.5);
+    border-radius: 6px;
+    margin-top:4vh;
+}
+
+.stand-conteiner {
+    width: 90%;
+    margin: 0 auto;
+    /* height: 3vh; */
+    border: 1px solid yellow;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.stand-conteiner>p:first-of-type{
+    margin-bottom: 2.5vh;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:1.5vh 0;
+}
+
+.title>p{
+    color: #3CB3AB;
+    font-size:1.1vw;
+    font-weight: 500;
+}
+
+
+
+.select-reward-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+   
+    border: 1px solid black;
+    margin-bottom: 2.5vh;
+}
+.select-reward-conteiner>div:first-of-type{
+    display: flex;
+    align-items: center;
+}
+
+.select-reward-conteiner>div:first-of-type p{
+    margin-left:0.7vw;
+}
+
+.select-reward{
+    height: 6vh;
+    width: 12vw;
+    border-radius: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #147A73;
+    font-size: 1vw;
+    color: white;
+    font-weight: 500;
+
+}
+
+.select-reward:hover{
+    cursor: pointer;
+    background-color: rgb(60, 179, 171);
+}
+
+/*da kada skrolujemo modal uvek ostane na istoj poziciji*/
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition:200ms ease-in-out;
+    /*scale 0 tada je nevidljiv*/
+    border: 1px solid rgba(122,122,122,0.5);
+    border-radius: 6px;
+    z-index: 30;
+    background-color: pink;
+    /*ovde obavezno mora da bude bg color*/
+    width: 55%;
+    height: 75vh;
+    /*posle postaviti na height:auto*/
+}
+.modal .active{
+     transform: translate(-50%,-50%) scale(1);
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,60%);
+    transition:200ms ease-in-out;
+   z-index: 25;
+    pointer-events: none;
+   opacity: 0;
+}
+
+.overlay .active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+.times{
+    position: absolute;
+    display:block;
+    top: 4vh;
+    right: 6vh;
+    font-size: 4vh;
+    color: #7A7A7A;
+    font-weight: 700;
+    cursor: pointer;
+}
+.modal-conteiner{
+    /* width: 90%; */
+    width: 100%;
+    height: 75vh;
+    padding: 40px;
+    margin:0 auto;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    border-radius: 6px;
+    
+}
+.modal-conteiner>p:first-of-type{
+    margin-top:1.5vh;
+    margin-bottom: 4vh;
+}
+/* .modal-conteiner h2{
+    margin-top:5vh;
+} */
+.pledge-section{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(122,122,122,0.5);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+  
+    
+}
+.pledge-header{
+    display: flex;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.pledge-btn-conteiner {
+  width: 18%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.pledge-text-conteiner{
+    margin-right: 1.5vw;
+    /* display: flex; */
+}
+.pledge-btn{
+    width: 1.7vw;
+  height:1.7vw; 
+ border-radius: 50%;
+  border: 1px solid rgba(122,122,122,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.pledge-header-modal{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5vh;
+    
+}
+.pledge-header-modal p{
+    line-height: normal;
+}
+
+.pledge-header-modal>p:nth-of-type(1){
+    color:#3CB3AB;
+    font-weight: 500;
+}
+.pledge-header-modal>p:nth-of-type(2){
+    margin-left:auto;
+     font-size: 3.2vh;
+    font-weight: 700;
+    color: black;
+}
+
+.pledge-header-modal>p:nth-of-type(3){
+    margin-left:0.7vw;
+  
+   
+}
+.pledge-modal-title{
+   margin-right: 1.5vw;
+ 
+    
+} 
+
+.bamboo-btn {
+    margin-top:0.7vh;
+}
+
+         
+
+.circle{
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background-color: #3CB3AB;
+    opacity: 1;
+}
+
+.enter-pledge{
+    border-top:1px solid rgba(122,122,122,0.5);
+    display: flex;
+    
+    align-items: center;
+    height: 13vh;
+    
+}
+.enter-pledge>p{
+   width: 10vw;
+   margin-left: 2vw;
+   margin-right: auto;
+   
+}
+
+.submit-pledge{
+    width: 11vw;
+    height: 8vh;
+    border-radius: 2vw;
+    background-color: #3CB3AB;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.7vw;
+    margin-left:1vw;
+
+}
+.submit-pledge:hover{
+    cursor: pointer;
+}
+
+.input-box{
+    
+    width: 11vw;
+    height: 8vh;
+    border: 1px solid #3CB3AB;
+    border-radius: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.input-box>p:first-of-type{
+    font-weight: 700;
+    opacity: 0.5;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.input-box>p:nth-of-type(2){
+    color: black;
+    font-weight: 700;
+    margin-right: 0.5vw;
+}
+.input-pledge{
+    display: block;
+    width: 4vw;
+    -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  caret-color: #3CB3AB; 
+  font-family: 'Commissioner', sans-serif;
+  font-size: 1.2vw;
+  font-weight: 700;
+
+}
+
+.inactive{
+    opacity: 0.4;
+}
