@@ -34,7 +34,7 @@
              <h2>Mastercraft Bamboo Monitor Riser</h2>
              <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
              <div class="bookmark-conteiner">
-                  <div class="back-btn">Back this project</div>
+                  <div class="back-btn back-project">Back this project</div>
                   <div class="bookmark-btn">
                     <img  class="bookmark-img" src="./images/icon-bookmark.svg" alt="">
                     <div class="bookmark-text">Bookmark</div>
@@ -87,7 +87,7 @@
                       <h1>101</h1>
                       <p>left</p>
                     </div>
-                    <div class="select-reward">Select Reward</div>
+                    <div class="select-reward back-project">Select Reward</div>
 
                   </div>
                   </div>
@@ -108,7 +108,7 @@
                       <h1>64</h1>
                       <p>left</p>
                     </div>
-                    <div class="select-reward">Select Reward</div>
+                    <div class="select-reward back-project">Select Reward</div>
 
                   </div>
 
@@ -129,7 +129,7 @@
                       <h1>0</h1>
                       <p>left</p>
                     </div>
-                    <div class="select-reward">Out of stocks</div>
+                    <div class="inactive-btn">Out of stocks</div>
 
                   </div>
                   </div>
@@ -142,8 +142,9 @@
 
 <!-- modal window -->
 <div class="modal">
-  <span class="times">&times</span>
+ 
   <div class="modal-conteiner">
+     <span class="times">&times</span>
      <h2>Back this project</h2>
     <p>Want to support us in bringing Mastercraft 
     Bamboo Monitor Riser out in the world? </p>
@@ -151,7 +152,7 @@
        <div class="pledge-conteiner">
          <div class="pledge-header">
            <div class="pledge-btn-conteiner">
-             <div class="pledge-btn">
+             <div class="pledge-btn" data-active="active">
                 <div class="circle"></div>
              </div>
              
@@ -166,7 +167,17 @@
             </div>
          </div>
        </div>
-       <div></div>
+        <div class="enter-pledge">
+         <p>Enter your pledge</p>
+         <div class="input-box">
+           <p>$</p>
+           <p></p>
+           <input type="text" class="input-pledge" placeholder="">
+          </div>
+         
+         <div class="submit-pledge">Continue</div>
+       </div>
+       
     </div> <!--end of pledge-section-->
 
     <!--***************************************************************************-->
@@ -174,7 +185,7 @@
        <div class="pledge-conteiner">
          <div class="pledge-header">
            <div class="pledge-btn-conteiner">
-             <div class="pledge-btn bamboo-btn">
+             <div class="pledge-btn bamboo-btn"  data-active="active">
                 <div class="circle"></div>
              </div>
              
@@ -208,7 +219,7 @@
        <div class="pledge-conteiner">
          <div class="pledge-header">
            <div class="pledge-btn-conteiner">
-             <div class="pledge-btn bamboo-btn">
+             <div class="pledge-btn bamboo-btn" data-active="active">
                 <div class="circle"></div>
              </div>
              
@@ -238,7 +249,7 @@
        </div>
     </div> <!--end of pledge-section-->
   <!--*********************************************************************************************************-->
- <div class="pledge-section inactive">
+ <div class="pledge-section-inactive">
        <div class="pledge-conteiner">
          <div class="pledge-header">
            <div class="pledge-btn-conteiner">
@@ -249,7 +260,7 @@
            </div>
            <div class="pledge-text-conteiner">
              <div class="pledge-header-modal"> 
-               <h4 class="pledge-modal-title">Mahogany Special Edition</h4>
+               <h4 class="modal-title-inactive">Mahogany Special Edition</h4>
                <p>Pledge $200 or more</p>
                <p>0</p>
                <p>left</p>
@@ -267,6 +278,16 @@
 
   </div> <!--end of modal conteiner-->
 </div> <!--end of modal class-->
+
+<div class="modal2">
+    <img src="./images/icon-check.svg" alt="">
+    <h2>Thanks for your support!</h2>
+    <p>Your pledge brings us one step closer to sharing Mastercraft 
+      Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.
+    </p>
+    <div class="got-it">Got it!</div>
+
+</div> <!--end of modal2-->
 <div class="overlay"></div>
    </main>
 

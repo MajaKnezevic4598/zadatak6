@@ -348,7 +348,7 @@ position: relative;
     margin-left:0.7vw;
 }
 
-.select-reward{
+.select-reward, .inactive-btn{
     height: 6vh;
     width: 12vw;
     border-radius: 4vw;
@@ -378,13 +378,14 @@ position: relative;
     border: 1px solid rgba(122,122,122,0.5);
     border-radius: 6px;
     z-index: 30;
-    background-color: pink;
+    /* background-color: pink; */
+    background-color: white;
     /*ovde obavezno mora da bude bg color*/
     width: 55%;
     height: 75vh;
     /*posle postaviti na height:auto*/
 }
-.modal .active{
+.modal.active{
      transform: translate(-50%,-50%) scale(1);
 }
 
@@ -401,17 +402,18 @@ position: relative;
    opacity: 0;
 }
 
-.overlay .active{
+.overlay.active{
     opacity: 1;
     pointer-events: all;
 }
 
 
 .times{
-    position: absolute;
-    display:block;
-    top: 4vh;
-    right: 6vh;
+    position: relative;
+    /* display:block; */
+    
+    top: -1vh;
+    left: 98%;
     font-size: 4vh;
     color: #7A7A7A;
     font-weight: 700;
@@ -445,6 +447,16 @@ position: relative;
     margin-bottom: 3vh;
   
     
+}
+.pledge-section-inactive{
+     width: 100%;
+    height: auto;
+    border: 1px solid rgba(122,122,122,0.5);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    opacity: 0.4;
 }
 .pledge-header{
     display: flex;
@@ -497,11 +509,14 @@ position: relative;
   
    
 }
-.pledge-modal-title{
+.pledge-modal-title, .modal-title-inactive{
    margin-right: 1.5vw;
  
     
 } 
+.pledge-modal-title:hover{
+    cursor: pointer;
+}
 
 .bamboo-btn {
     margin-top:0.7vh;
@@ -514,15 +529,15 @@ position: relative;
     height: 1vw;
     border-radius: 50%;
     background-color: #3CB3AB;
-    opacity: 1;
+    opacity: 0;
 }
 
 .enter-pledge{
     border-top:1px solid rgba(122,122,122,0.5);
     display: flex;
-    
     align-items: center;
     height: 13vh;
+  display: none;
     
 }
 .enter-pledge>p{
@@ -592,3 +607,67 @@ position: relative;
 .inactive{
     opacity: 0.4;
 }
+
+
+
+.modal2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition:200ms ease-in-out;
+    /*scale 0 tada je nevidljiv*/
+    border: 1px solid rgba(122,122,122,0.5);
+    border-radius: 6px;
+    z-index: 40;
+    /* background-color: pink; */
+    background-color: white;
+    /*ovde obavezno mora da bude bg color*/
+    width: 500px;
+    height: auto;
+    /*posle postaviti na height:auto*/
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+   align-items: center;
+    padding: 2.5vw;
+    box-sizing: border-box;
+
+}
+
+.modal2.active{
+     transform: translate(-50%,-50%) scale(1);
+}
+.modal2 p{
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+.modal2 img{
+    width: 5vw;
+    height: auto;
+    margin-bottom: 5vh;
+}
+
+.got-it{
+    height: 60px;
+    width: 125px;
+    border-radius: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #147A73;
+    font-size: 1vw;
+    color: white;
+    font-weight: 500; 
+  
+}
+
+.got-it:hover{
+    cursor: pointer;
+    background-color: #3CB3AB;
+
+}
+
+
