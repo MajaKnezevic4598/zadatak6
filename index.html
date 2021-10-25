@@ -10,13 +10,18 @@
  
   <body>
    <main class="main">
-     
+      <!-- <div class="layer2"></div> -->
        <div class ="header-picture">
-         <img src="./images/image-hero-desktop.jpg" alt="">
+        
+         <!-- <img src="./images/image-hero-desktop.jpg" alt=""> -->
+         <div class="background-image"></div>
+        
         <div class="header-picture-layer">
          <div class="navbar-conteiner">
            <div class="crowdfound">crowdfound</div>
-           <nav class="navbar">
+           <a class="burger-nav" data-burger = "active"><img src="./images/icon-hamburger.svg" alt=""></a>
+           <nav class="navbar" href="">
+             
              <a href="">About</a>
              <a href="">Discover</a>
              <a href="">GetStarted</a>
@@ -44,11 +49,11 @@
            <section class="backers-conteiner">
               <div class="backers-statistics">
                 <div class="backed">
-                  <h1>$89,914</h1>
+                  <h1>$ <span class="total-backed-sum">89,914</span></h1>
                   <p>of $100,000 backed</p>
                 </div>
                 <div class="total-backers">
-                  <h1>5,007</h1>
+                  <h1 class="backers">5,007</h1>
                   <p>total backers</p>
                 </div>
                 <div class="days-left">
@@ -169,13 +174,14 @@
        </div>
         <div class="enter-pledge">
          <p>Enter your pledge</p>
+         <p class="error-msg"></p>
          <div class="input-box">
            <p>$</p>
            <p></p>
-           <input type="text" class="input-pledge" placeholder="">
+           <input type="number" class="input-pledge" placeholder="">
           </div>
          
-         <div class="submit-pledge">Continue</div>
+         <div class="submit-pledge" data-min-pledge="1">Continue</div>
        </div>
        
     </div> <!--end of pledge-section-->
@@ -204,14 +210,17 @@
          </div>
        </div>
        <div class="enter-pledge">
+         
          <p>Enter your pledge</p>
+         <p class="error-msg"></p>
          <div class="input-box">
            <p>$</p>
            <p>25</p>
-           <input type="text" class="input-pledge" placeholder="">
+          
+           <input type="number" class="input-pledge" placeholder="">
           </div>
          
-         <div class="submit-pledge">Continue</div>
+         <div class="submit-pledge" data-min-pledge="25">Continue</div>
        </div>
     </div> <!--end of pledge-section-->
     <!--*******************************************************************-->
@@ -239,13 +248,14 @@
        </div>
        <div class="enter-pledge">
          <p>Enter your pledge</p>
+         <p class="error-msg"></p>
          <div class="input-box">
            <p>$</p>
            <p>75</p>
-           <input type="text" class="input-pledge" placeholder="">
+           <input type="number" class="input-pledge" placeholder="">
           </div>
          
-         <div class="submit-pledge">Continue</div>
+         <div class="submit-pledge" data-min-pledge="75">Continue</div>
        </div>
     </div> <!--end of pledge-section-->
   <!--*********************************************************************************************************-->
@@ -289,6 +299,7 @@
 
 </div> <!--end of modal2-->
 <div class="overlay"></div>
+<div class="layer2"></div>
    </main>
 
     <script src="script.js"></script>
